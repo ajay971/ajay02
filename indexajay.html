@@ -1,0 +1,132 @@
+<html>
+<head>
+<script>
+function validate(){
+var first name=document.stud-form.first name;
+var Last name=document.stud-form.Last name;
+var E-mail=document.stud-form.E-mail;
+var Password=document.stud-form.Password;
+var Confirm Password=document.stud-form.confirm Password;
+var Gender=document.stud-form.Gender;
+var Date Of Birth=document.stud-form.Date Of Birth;
+var Hobbies=document.stud-form.Hobbies;
+var Phone No=document.stud-form.Phone No;
+if(First name.value.length<=0){
+alert("First name is required");
+first name.focus();
+return false;
+}
+if(Last name.value.length<=0){
+alert("Last name is required");
+Last name.focus();
+return false;
+}
+if(E-mail.value.length<=0){
+alert("E-mailis required");
+E-mail.focus();
+return false;
+}
+if(Password.value.length<=0){
+alert("Password is required");
+Password.focus();
+return false;
+}
+if(confirm Password.value.length<=0){
+alert("confirm Password is required");
+confirm Password.focus();
+return false;
+}
+if(Gender.value.length<=0){
+alert("Gender is required");
+Gender.focus();
+return false;
+}
+if(Date Of Birth.value.length<=0){
+alert("Date Of Birth is required");
+Date Of Birth.focus();
+return false;
+}
+if(Hobbies.value.length<=0){
+alert("Hobbies are required");
+Hobbies.focus();
+return false;
+}
+if(Phone No.value.length<=0){
+alert("Phone Nois required");
+Phone No.focus();
+return false;
+}
+}
+</script>
+<style>
+h1{
+text-shadow:2px 2px 5px white,3px 3px 6px black,4px 4px 7px blue;
+}
+form{
+width:400px;
+padding:10px;
+border:2px solid black;
+font-family:impact;
+align-content:center;
+align-item:center;
+border-radius:20px 30px 50px 40px;
+box-shadow:20px 20px 10px black,2px 2px 15px white,4px 4px 10px blue;;
+opacity:0.9
+}
+#btn{
+background-color:grey;
+border:2px solid black;
+box-shadow:2px 2px 5px white,3px 3px 6px black,4px 4px 7px blue;
+border-radius:50px 50px 50px 50px;
+}
+body{
+opacity:0.9;
+}
+marquee{
+font-size:30px;
+text-shadow:2px 2px 5px red,3px 3px 6px white,4px 4px 7px black;
+}
+textarea{
+width:250px;
+height:35px;
+}
+</style>
+</head>
+<title>FORM</title>
+<body><center>
+<body background="image.JPG.jpg" style="background-repeat:no-repeat; background-size:100% 100%">
+<marquee style ="color:Blue;" hspace="100">welcome to my page!!!!</marquee>
+<form style ="background-image:linear-gradient(red,white,gray)" method="" action="" name="stud-form" onsubmit="return validate()">
+<h1 align="center"><u>REGISTRATION</u></h1>
+<label>First Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30%" placeholder="Enter first name"><br><br>
+<label>Last Name:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30%"  placeholder="Enter last name"><br><br>
+<label>E-mail:</label>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<input type="text"  size="30%" placeholder="Enter your E-mail"><br><br>
+<label>Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input type="PASSWORD" size="30%" ><br><br>
+<label>Confirm Password:</label> <input type="PASSWORD" size="30%" ><br><br>
+<lable>Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<input type="radio" name="Gender"><label for="Male">Male</label>
+</label><input type="radio" name="Gender"><label for="Female">Female</label>
+</label><input type="radio" name="Gender"><label for="Others">Others</label><br><br>
+<label>Date Of Birth:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="DATE" name="DATE" ><br><br>
+<lable>Hobbies:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="HOBBIES" id="Cricket"><label for="Cricket">Cricket</label>
+</label><input type="checkbox" name="HOBBIES" id="Reading"><label for="Reading">Reading</label>
+</label><input type="checkbox" name="HOBBIES" id="Sleeping"><label for="Sleeping">Sleeping</label><br><br>
+<label>Phone No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<select>
+<option>+91</option>
+<option>+99</option>
+<option>+09</option><input type="text" size="23%" placeholder="Enter Your Phone Number"><br><br>
+Comments:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea size="30%"></textarea><br><br><br>
+<center><button  type="submit" id="btn" value="submit"><b>SUBMIT</button></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="submit" id="btn" value="submit"><b>RESET</button></b>
+</center>
+</form>
+</body><br>
+</html>
